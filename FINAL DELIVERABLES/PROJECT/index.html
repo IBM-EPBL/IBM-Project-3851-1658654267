@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHATBOT</title>
+    <link rel="stylesheet" href="\staticFiles\style.css">
+</head>
+<body>
+    <div class="navbar">
+    <ul>
+        <li><a class="active" href="#home" style="font-size: 50px;">CHATBOT</a></li>
+        <div class="items">
+        <li style="font-family:'Times New Roman', Times, serif"><a href="#home">Home</a></li>
+        <li style="font-family:'Times New Roman', Times, serif"><a href="#contact">Contact</a></li>
+        <li style="font-family:'Times New Roman', Times, serif"><a href="#contact">Help</a></li>
+        <li style="font-family:'Times New Roman', Times, serif"><a href="#about">About</a></li>
+        </div>
+      </ul>
+      <div>
+        <h1 class="head" style="font-family:'Times New Roman', Times, serif;">AI BASED DISCOURSED FOR <br>BANKING <br>INDUSTRY</h1>
+      </div>
+     </div>
+     <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "e5775fcd-13f7-4f60-82e2-2c8e7cb6913b", // The ID of this integration.
+        region: "us-south", // The region your integration is hosted in.
+        serviceInstanceID: "ea723f0a-d6a0-414a-8f2a-9ce24206b596", // The ID of your service instance.
+        onLoad: function(instance) { instance.render(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+        document.head.appendChild(t);
+      });
+    </script>
+</body>
+</html>
